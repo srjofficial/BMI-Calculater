@@ -1,0 +1,22 @@
+<div class="register-container">
+    <h2>Register</h2>
+    <form>
+  
+      <div class="form-group">
+        <!-- <label for="email">Email:</label> -->
+        <input type="email" id="email" [(ngModel)]="email" name="email" required placeholder="Enter your email" />
+      </div>
+      
+      <div class="form-group">
+       
+        <input type="password" id="password" [(ngModel)]="pswd" name="pswd" required placeholder="Enter your password" />
+
+      </div>
+  
+  
+      <button (click)="navigateToRegister()"  type="submit" >Register</button>
+  
+      <p>Already have an account? <a href="/login">Login</a></p>
+    </form>
+  </div>
+  
